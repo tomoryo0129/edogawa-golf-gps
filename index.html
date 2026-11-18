@@ -53,7 +53,7 @@ button:disabled{opacity:.45}
 
 </head>
 <body>
-<header><div class="top"><span>⛳ GPS GOLF NAVIGATOR</span><span>マナゴルフクラブ専用</span></div><h1>マナゴルフクラブ</h1><div class="sub">現在地からグリーン手前・中央・奥まで</div></header>
+<header><div class="top"><span>⛳ GPS GOLF NAVIGATOR</span><span>江戸川ラインゴルフショートコース専用</span></div><h1>江戸川ラインゴルフ GPSナビ</h1><div class="sub">現在地からグリーン手前・中央・奥まで</div></header>
 <main>
 <section class="card quick-card">
 <label for="course">コース</label><select id="course"><option value="A">Aコース</option><option value="B">Bコース</option></select>
@@ -465,7 +465,7 @@ $("tracking").onclick=()=>{if(watch!==null){navigator.geolocation.clearWatch(wat
 route.onchange=refill;hole.onchange=()=>{show();renderShotList();loadScoreInputs();renderRound()};
 $("json").value=JSON.stringify(sample,null,2);
 $("apply").onclick=()=>{try{const v=JSON.parse($("json").value);if(!v.routes)throw Error("routesがありません");data=v;refill();$("dataStatus").textContent="データを反映しました"}catch(e){$("dataStatus").textContent="JSONエラー："+e.message}};
-$("save").onclick=()=>{const b=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="mana-golf-course-data.json";a.click();URL.revokeObjectURL(a.href)};
+$("save").onclick=()=>{const b=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="edogawa-course-data.json";a.click();URL.revokeObjectURL(a.href)};
 
 function recordShot(){
  if(!pos){$("shotStatus").textContent="先に「現在地を取得」またはGPS追跡を開始してください。";return}

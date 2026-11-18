@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "マナゴルフクラブ GPSナビ",
-  "short_name": "マナゴルフGPS",
-  "description": "マナゴルフクラブ専用 GPS距離ナビ・ショット記録・ラウンド後軌跡確認",
+  "name": "江戸川ラインゴルフ GPSナビ",
+  "short_name": "江戸川ラインゴルフ",
+  "description": "江戸川ラインゴルフショートコース専用 GPS距離ナビ・ショット記録・ラウンド後軌跡確認",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
